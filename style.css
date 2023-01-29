@@ -1,0 +1,446 @@
+* {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-height: 100vh;
+}
+
+body {
+  font-family: Space Grotesk;
+  font-weight: 500;
+  width: 100%;
+  background-color: rgb(241, 241, 241);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#card-front {
+  box-shadow: 7px 9px 20px 3px rgb(39, 39, 39);
+  position: absolute;
+  margin: auto;
+  top: 6em;
+  left: 5.8em;
+}
+
+#card-back {
+  box-shadow: 7px 9px 20px 3px rgb(39, 39, 39);
+  margin: auto;
+  position: absolute;
+  top: 23.5rem;
+  left: 14rem;
+}
+
+.card-logo {
+  position: absolute;
+  top: 7.5em;
+  left: 7.5em;
+  z-index: 1;
+}
+
+.hidden {
+  display: none !important;
+}
+
+#card-number {
+  position: absolute;
+  top: 7.3em;
+  left: 4em;
+  z-index: 1;
+  letter-spacing: 7px;
+  font-size: 30px;
+  color: hsl(270, 3%, 87%);
+}
+
+#card-owner {
+  top: 16em;
+  z-index: 1;
+  left: 6.7em;
+  font-size: 18px;
+  color: hsl(270, 3%, 87%);
+  text-transform: uppercase;
+}
+
+#expiry-date {
+  top: 16em;
+  left: 27em;
+  z-index: 1;
+  font-size: 18px;
+  color: hsl(270, 3%, 87%);
+}
+
+#cvcNumber {
+  position: absolute;
+  top: 27em;
+  left: 32.8em;
+
+  color: hsl(270, 3%, 87%);
+  font-size: 18px;
+}
+
+p {
+  position: absolute;
+  top: 20%;
+}
+
+::placeholder {
+  color: hsl(270, 3%, 87%);
+  font-size: 18px;
+}
+
+.right {
+  width: 30%;
+  margin: auto;
+
+  color: hsl(278, 68%, 11%);
+  font-size: 18px;
+}
+
+.right2 {
+  width: 30%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.right2 h1 {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.right2 span {
+  font-size: 18px;
+  color: hsl(240, 1%, 83%);
+}
+
+input {
+  border: 1px solid hsl(270, 3%, 87%);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+input:focus {
+  outline: 0;
+}
+
+input:hover {
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    60deg,
+    rgb(52, 71, 240),
+    rgb(212, 25, 150),
+    rgb(112, 6, 112)
+  );
+}
+
+#ch {
+  padding-bottom: 13px;
+}
+
+#cn {
+  padding-bottom: 13px;
+}
+
+#Name {
+  width: 100%;
+  margin-top: 3px;
+}
+
+#Card-Number {
+  width: 100%;
+  margin-top: 3px;
+}
+
+#MM {
+  margin-top: 3px;
+  width: 90%;
+  margin-right: 7px;
+}
+
+#YY {
+  margin-top: 3px;
+  width: 90%;
+  margin-right: 7px;
+}
+
+.yymm {
+  width: 100%;
+  display: flex;
+}
+
+.mmyy {
+  display: flex;
+}
+
+#ed {
+  width: 100%;
+}
+
+#cvc {
+  width: 100%;
+  margin-top: 3px;
+  padding-right: 58px;
+}
+
+.right-2 {
+  display: flex;
+}
+
+button {
+  margin-top: 30px;
+  padding: 12px;
+  width: 100%;
+  border-radius: 5px;
+  color: hsl(270, 3%, 87%);
+  background-color: hsl(278, 68%, 11%);
+  cursor: pointer;
+}
+
+#bg {
+  min-height: 100vh;
+  width: 41em;
+  padding-right: 230px;
+}
+@media screen and (min-width: 1024px) {
+  #mb {
+    display: none;
+  }
+}
+
+@media screen and (min-height: 720px) {
+  .left {
+    position: absolute;
+    height: 45em;
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 1023.5px) {
+  .container {
+    flex-direction: column;
+  }
+  #bg {
+    display: none;
+  }
+
+  #mb {
+    position: relative;
+    min-width: 100vw;
+    height: 20em;
+  }
+
+  #card-front {
+    position: absolute;
+    top: 7.6em;
+    left: 10.7em;
+
+    width: 36%;
+    /* height: 35vh; */
+    z-index: 1;
+  }
+
+  #card-back {
+    position: absolute;
+    top: 1.5em;
+    left: 24.5em;
+    /* height: 35vh; */
+    width: 36%;
+  }
+
+  .card-logo {
+    position: absolute;
+    top: 8.5em;
+    left: 11.5em;
+  }
+
+  #card-number {
+    position: absolute;
+    top: 12em;
+    left: 10.5em;
+    font-size: 18px;
+    /* width:? 28%; */
+  }
+
+  #card-owner {
+    position: absolute;
+    top: 16em;
+    left: 11.9em;
+    font-size: 16px;
+  }
+
+  #expiry-date {
+    position: absolute;
+    top: 16em;
+    left: 27.7em;
+    font-size: 16px;
+  }
+
+  #cvcNumber {
+    position: absolute;
+    top: 6.3em;
+    left: 40.5em;
+    font-size: 16px;
+  }
+
+  .left {
+    position: absolute;
+    width: 55em;
+    margin: auto;
+    height: 25em;
+  }
+
+  .right {
+    height: 100vh;
+    width: 90%;
+    padding-top: 23vh;
+    margin: auto;
+  }
+
+  #cn,
+  #ch,
+  .right-2 {
+    width: 100%;
+    margin: auto;
+  }
+
+  #cvc {
+    margin-right: 200px;
+  }
+
+  @media screen and (max-width: 535px) {
+    #card-front {
+      position: absolute;
+      top: 6.4em;
+      left: 16.7em;
+      width: 23%;
+      z-index: 1;
+    }
+
+    #card-back {
+      position: absolute;
+      top: 2.5em;
+      left: 25.6em;
+      width: 23%;
+    }
+
+    .card-logo {
+      position: absolute;
+      top: 6.6em;
+      left: 17em;
+    }
+
+    .right {
+      padding-top: 15vh;
+    }
+
+    #card-number {
+      position: absolute;
+      top: 10em;
+      left: 17.2em;
+      letter-spacing: 2.5px;
+      font-size: 16px;
+    }
+
+    #card-owner {
+      position: absolute;
+      top: 13.5em;
+      left: 19.7em;
+      font-size: 14px;
+    }
+
+    #expiry-date {
+      position: absolute;
+      top: 13.5em;
+      left: 31em;
+      font-size: 14px;
+    }
+
+    #cvcNumber {
+      position: absolute;
+      top: 6.3em;
+      left: 40.5em;
+      font-size: 14px;
+    }
+  }
+
+  @media screen and (max-width: 395px) {
+    #cvc {
+      width: 100%;
+      margin-right: 300px;
+      margin-top: 1.8em;
+    }
+  }
+
+  @media screen and (max-width: 345px) {
+    #card-front {
+      position: absolute;
+      top: 8.4em;
+      left: 20.4em;
+      width: 23%;
+      z-index: 1;
+    }
+
+    #card-back {
+      position: absolute;
+      top: 2.5em;
+      left: 22em;
+      width: 23%;
+    }
+    .card-logo {
+      position: absolute;
+      top: 8.6em;
+      left: 20.6em;
+    }
+
+    #card-number {
+      position: absolute;
+      top: 12.2em;
+      left: 20.7em;
+      letter-spacing: 2.5px;
+      font-size: 16px;
+    }
+
+    #card-owner {
+      position: absolute;
+      top: 15.5em;
+      left: 23.7em;
+      font-size: 14px;
+    }
+
+    #expiry-date {
+      position: absolute;
+      top: 15.5em;
+      left: 35em;
+      font-size: 14px;
+    }
+
+    #cvcNumber {
+      position: absolute;
+      top: 6.2em;
+      left: 36.5em;
+      font-size: 14px;
+    }
+  }
+}
+
+.error {
+  border: 2px solid rgb(241, 42, 42);
+}
+
+.error_message {
+  gap: 0;
+}
+
+.error_message::after {
+  content: "Can't be blank";
+  margin-top: 1.5rem;
+  color: rgb(241, 42, 42);
+}

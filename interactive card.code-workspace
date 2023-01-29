@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"name": "interactive card",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "interactive card",
+		"liveServer.settings.port": 5501
+	}
+}
